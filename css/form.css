@@ -1,0 +1,142 @@
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.form-container,
+.account-info-container {
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #E0E0E0;
+}
+
+.form-container {
+    border: 1px solid #C5A3FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h2,
+.account-info-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    color: #B5B5C3;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    border: 1px solid #c5a3ff7e;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #C5A3FF;
+    outline: none;
+}
+
+.form-group select option {
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+}
+
+.form-group button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #1F1F1F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #C5A3FF;
+}
+
+.account-info-container {
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.account-info-container .info-group {
+    margin-bottom: 1rem;
+}
+
+.account-info-container .info-group label {
+    color: #B5B5C3;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.account-info-container .info-group input {
+    width: calc(100% - 10px);
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #1F2D3D;
+    color: #E0E0E0;
+}
+
+.account-info-container .info-group.password-group {
+    position: relative;
+}
+
+.account-info-container .password-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.account-info-container .password-wrapper input {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.account-info-container .password-wrapper .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.account-info-container img {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+}

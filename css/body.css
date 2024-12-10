@@ -1,0 +1,101 @@
+body {
+    font-family: 'Montserrat', sans-serif;  
+    background: linear-gradient(to right, rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 1)),
+                url('../img/valorant.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #272727;
+    color: #0077B6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ffffff; /* Accent color for links */
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F1F1F; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: #0077B6; /* Accent color for dropdown links */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #495057; /* Subtle hover effect */
+}
+
+/* Section Background */
+.section {
+    height: 600px; 
+    background-color: #2A2A2A; /* Slightly lighter than navbar for contrast */
+    color: #FFFFFF;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #424242;
+}
+
+/* Dropdown Menu */
+.navbar-nav .dropdown-menu {
+    background-color: #2A2A2A; /* Matches section background */
+    border: none;
+}
+
+.dropdown-item {
+    color: #0077B6; /* Accent color for items */
+}
+
+.dropdown-item:hover {
+    background-color: #495057; /* Subtle hover effect for dropdown */
+}
+
+/* Modals */
+.modal-content {
+    background-color: #1F2D3D;
+    border-radius: 10px;
+    color: #0077B6; /* Matches text color */
+}
+
+/* Active Label Hover Effect */
+label.active:hover::after,
+label.active.selected::after {
+    opacity: 1;
+    background-color: #0077B6; /* Consistent accent */
+}
+
+/* Adjust Footer, Titles, or Minor Elements */
+footer {
+    background-color: #1F1F1F; /* Match navbar */
+    color: #0077B6;
+    padding: 10px;
+    text-align: center;
+}
